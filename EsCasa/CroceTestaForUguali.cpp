@@ -29,6 +29,7 @@ int main() {
 	cout<<"sono uscite "<<teste<<" teste "<<" e "<<croce<<" croce";
 
 }
+
 	
 
 
