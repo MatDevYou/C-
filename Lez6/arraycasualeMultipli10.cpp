@@ -32,6 +32,7 @@ int main() {
 
     int numeri[n];
 
+    //genera i numeri
     for (int i = 0; i < n; i++) {
         numeri[i] = casuale(a, b);
     }
