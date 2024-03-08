@@ -49,10 +49,7 @@ int main() {
       i--;
   }
 
-
-  // Chiamata alla funzione stampaArray per stampare l'array numeri
   stampaArray(numeri, n);
 
-  return 0;
 }
 
