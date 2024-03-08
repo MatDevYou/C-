@@ -31,7 +31,6 @@ int ricercaArray(int v[], int dimensione, int elemento){
 }
 
 
-
 int main() {
     srand(time(NULL));
 
@@ -40,30 +39,18 @@ int main() {
 
     int numeri[n];
 
-    for (int i = 0; i < n; i++) {s
+	//riempo array casuale
+    for (int i = 0; i < n; i++) {
         numeri[i] = casuale(a, b);
     }
 
+	//legge array
     for (int i = 0; i < n; i++) {
+    	if(numeri[i] % 10 == 0)
         cout <<i<<": "<< numeri[i] << " "<<endl;
     }
     cout << endl;
 
-	 for (int i = 0; i < n; i++) {
-        if (cerca == numeri[i] && numeri[i]  % 10 == 0) { 
-            cout<<"elemento "<<cerca<<"posizione "<<i<<endl;
-		break;
-        }
-    }
-
-
-    if (pos % 10 != 0 ) {
-        cout << "Elemento non trovato" << endl;
-    } else {
-    	cout << "Posizione del numero: " << pos << endl;
-	} 
-	
-	
 
 
 }
