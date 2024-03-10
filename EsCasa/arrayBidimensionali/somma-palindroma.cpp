@@ -15,25 +15,21 @@ using namespace std;
 
 int main() {
 
-    int m [5][5];
+    int m [6][6];
 
-    for(int i = 0; i < 5; i++){
-        for(int j = 0; j < 5; j++){
-            if (i == j){
-                m[i][j] = 1;
-            } else {
-                m[i][j] = 0;
-            }
+    for(int i = 0; i < 6; i++){
+        for(int j = 0; j < 6; j++){
+            cin>>m[i][j];
         }
     }
 
-    for (int i = 0; i < 5;i++){
-        for (int j = 0; j < 5; j++){
-            cout<<m[i][j]<<" ";
-        }
+    int somma [6];
+
+    for (int i = 0; i < 6;i++){
+       somma [i] = 0;
+       for ( int j = 0; j < 6; j++){
+        somma[i] = somma[i] + m[i][j]; 
+       }
         cout<<endl;
     }
-
-
-
 }
