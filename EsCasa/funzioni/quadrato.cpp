@@ -32,9 +32,10 @@ int main() {
         cout << endl;
     }
 
-    for (int i = n-1; i < n; i-- ){
+    for (int i = n-1; i > 0; i-- ){
         quadrato(i);
-
+        cout << endl;
     }
    
 }
+

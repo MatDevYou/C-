@@ -48,9 +48,6 @@ int main() {
         cout <<  setprecision(2) << fixed << "L'imposta da pagare e: " << reddito << " euro." << endl;
     }
 }
-	
-   
-
 
 }
 
