@@ -33,7 +33,7 @@ int main() {
 
     int numeri[n];
 
-    for (int i = 0; i < n; i++) {s
+    for (int i = 0; i < n; i++) {
         numeri[i] = casuale(a, b);
     }
 
