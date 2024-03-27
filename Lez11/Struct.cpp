@@ -11,15 +11,10 @@ definire struttura per creare una data
 
 #include <iostream>
 
-
-void stampaData (struct data x){
-	
-}
-
 using namespace std;
 
 //definizione id struct
-struct data {
+struct dataa {
 int giorno;
 int mese;
 int anno;
@@ -29,7 +24,7 @@ int anno;
 
 int main() {
 	//definizione di una variabile di tipo struct data
-	data d;
+	dataa d;
 	
 	//inizializzare una data
 	d.giorno = 26;

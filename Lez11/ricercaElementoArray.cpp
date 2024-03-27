@@ -50,5 +50,4 @@ int main() {
         cout << "Posizione del numero: " << pos << endl;
     }
 
-    return 0;
 }
