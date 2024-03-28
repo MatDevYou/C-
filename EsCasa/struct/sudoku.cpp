@@ -8,7 +8,7 @@ const int GRID_SIZE = 9;
 void printGrid(int grid[][GRID_SIZE]) {
   for (int i = 0; i < GRID_SIZE; i++) {
     for (int j = 0; j < GRID_SIZE; j++) {
-      cout << grid[i][j] << " ";
+      cout << grid[i][j] << " | ";
     }
     cout << endl;
   }
