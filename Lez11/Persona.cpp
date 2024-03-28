@@ -49,7 +49,6 @@ void personaBlocco(struct persona x) {
 
 int main() {
 	
-	
 	struct data data_nascita = {15, 10, 1990}; // Definizione della data di nascita
 	persona p1 = {"Luca", "Rossi", data_nascita, "Torino", 'M'};
 
@@ -59,6 +58,5 @@ int main() {
 	personaBlocco(p1);
 	
 	personaBlocco(p2);
-
 
 }
