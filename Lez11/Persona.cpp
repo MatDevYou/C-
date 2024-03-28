@@ -17,7 +17,7 @@ struct persona {
 	char sesso;
 };
 
-bool maggiorenne(struct persona x) {
+int maggiorenne(struct persona x) {
 	return (2024 - x.datanascita.anno) >= 18;
 }
 
