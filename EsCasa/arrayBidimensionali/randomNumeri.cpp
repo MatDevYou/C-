@@ -3,6 +3,7 @@
 Memorizzare in un array bidimensionale 10 x 10 dei numeri casuali 
 compresi tra zero e 9, stamparne il contenuto e dire quanti zeri 
 sono memorizzati all'interno.
+
 *******************************************************************************/
 
 #include <iostream>
