@@ -14,27 +14,24 @@ int numeroPag;
 double costo;
 };
 
-double media(struct libro x){
-	 return (x.numeroPag + x.costo) / 2.0;
-}
-
 void stampaLibro (struct libro x){
-    cout << "\nCodice: " << x.codice << endl;
-    cout << "Numero Pagine: " << x.numeroPag << endl;
-    cout << "Prezzo: " << x.costo << " Euro"<< endl;
-	cout << "Media per costo libro: " << media(x) << endl;
-}
+    cout << "\nCodice: " << x.codice;
+    cout << "Numero Pagine: " << x.numeroPag;
+    cout << "Prezzo: " << x.costo;
 
+}
 
 
 int main() {
 	//definizione di una variabile di tipo struct data
+	libro l1;
+	libro l2;
+    libro l3;
 
 	libro l1 = {129, 125, 23.00};
 	libro l2 = {231, 75, 10.00};
 	libro l3 = {011, 225, 19.50};
 
-	stampaLibro(l1);
-	stampaLibro(l2);
-	stampaLibro(l3);
+    stampaLibro(l1);
+	
 }
