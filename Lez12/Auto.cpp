@@ -63,9 +63,6 @@ int main() {
 	macchina a3 = {"Fiat", "Punto", 130,"GPL", "Grigia Spilberga"};
 	macchina a4 = {"Ferrari", "PuroSangue", 700,"Metano", "Rosso Sangue"};
 	
-	for (int i = 0; i < macchinaBlocco(a4); i++){
-		macchinaBlocco(x);
-	}
 	
 	macchinaBlocco(a1);
 	macchinaBlocco(a2);
