@@ -86,7 +86,6 @@ int stampaSaldo(spesa s, entrata e) {
     return s.importo + e.importo;
 }
 
-
 int main() {
 
     entrata e1 ;
