@@ -69,7 +69,6 @@ void stampa(struct consulente x){
 }
 
 int main(){
-
 	//lista dei consulenti con forma l'azienda
 
 	consulente lista[DIM]={
