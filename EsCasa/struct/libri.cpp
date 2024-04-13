@@ -21,7 +21,6 @@ void stampaLibro (struct libro x){
 
 }
 
-
 int main() {
 	//definizione di una variabile di tipo struct data
 	libro l1;
