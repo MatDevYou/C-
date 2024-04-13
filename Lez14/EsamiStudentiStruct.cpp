@@ -79,5 +79,6 @@ int main() {
 	cout << endl;
 	cout << "Media esami: " << mediaEsami(s1) << endl;
 
+	
 
 }
