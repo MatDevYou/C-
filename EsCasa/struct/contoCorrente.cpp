@@ -39,7 +39,6 @@ entrata entrara;
 };
 
 
-
 void stampaEntrata (struct entrata x){
     cout << "\nData : " << x.data << endl;
     cout << "Descrizione: " << x.descrizione << endl;
