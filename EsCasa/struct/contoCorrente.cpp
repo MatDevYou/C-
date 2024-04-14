@@ -53,6 +53,25 @@ void stampaSpesa (struct spesa x){
     cout << "Tipo : " << x.tipo << endl;
 }
 
+struct movimento {
+    int mese;
+    int importo;
+    char tipo;
+};
+
+movimento creaMovimento() {
+    movimento m;
+    cout << "Inserisci il mese (da 1 a 12): ";
+    cin >> m.mese;
+
+    cout << "Inserisci l'importo: ";
+    cin >> m.importo;
+
+    cout << "Inserisci il tipo (S per spesa, E per entrata): ";
+    cin >> m.tipo;
+
+    return m;
+}
 
 void creaEntrata(struct entrata &e) {
 	cout << "Inserisci la data: ";
@@ -86,10 +105,37 @@ int stampaSaldo(spesa s, entrata e) {
     return s.importo + e.importo;
 }
 
+//gestico il report mensile delle entrate e uscite per ogni mese
+void stampaMensile (){
+    int totaleSpesa [12]= {0};
+    int totaleEntrata [12] = {0};
+
+    int numMovimenti;
+    cout << "Inserisci numero totale di movimenti effettuati: ";
+    cin >> numMovimenti;
+    
+    for (int i = 0; i < numMovimenti; i++){
+        movimento movimento = creaMovimento();
+        if (movimento.tipo == 'S')
+            totaleSpesa[movimento.mese - 1] += movimento.importo;
+        else
+            totaleEntrata[movimento.mese - 1] += movimento.importo; 
+    }
+    
+    cout << "\nReport totale spese e entrate in modo raggruppato: s";
+    
+    for (int i = 0; i < 12; i++){
+        cout << "\nMese: " << i + 1 << "spese totali: " << totaleSpesa[i] << " euro, Entrate totali: " << totaleEntrata[i] << " euro" << endl;
+    }
+}
+
+
 int main() {
 
     entrata e1 ;
     spesa s1;
+
+    stampaMensile();
 
     creaEntrata(e1);
     creaSpesa(s1);
